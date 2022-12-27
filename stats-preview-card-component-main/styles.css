@@ -1,6 +1,20 @@
+/* css stylesheet */
 
+body{
+    background-color: rgb(15, 2, 15);
+}
 
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(72, 6, 92);
+}
 
+.lCard{
+    display: flex;
+    flex: 70%;
+    align-content: center;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
