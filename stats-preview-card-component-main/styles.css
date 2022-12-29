@@ -54,7 +54,13 @@ body .container{
     grid-row-end: 3;
 }
 
+#templates{
+    padding-left: 10px;
+}
 
+#queries{
+    padding-left: 10px;
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
