@@ -8,11 +8,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(15, 8, 41);
+    background-color:hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container{
-    background-color: rgb(71, 17, 122);
+    background-color: hsl(244, 38%, 16%);
     border-radius: 1%;
 }
 
@@ -23,15 +25,39 @@ body{
 
 }
 
-.info{ 
+.infoContainer{ 
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     padding-bottom: 10px;
     padding-left: 10px;
+    text-align: center;
 }
 
+.info h1{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.info p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: larger;
+    padding: 20px;
+
+}
+
+.bolded{
+    font-weight: bold;
+    color: hsl(277, 64%, 61%);
+}
 .container .about{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -41,26 +67,56 @@ body{
 
 .items{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
 }
 
 #companies{
-    padding-right: 10px;
+    padding-right: 50px;
+}
+
+#companies p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 12px;
+    padding-top: 0%;
 }
 
 #templates{
-    padding-right: 10px;
+    padding-right: 50px;
+}
+
+#templates p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 12px;
+    padding-top: 0%;
+}
+
+#queries p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 12px;
+    padding-top: 0%;
+}
+
+.image{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 100%;
+    border-radius: 0px 1% 1% 0px;    
 }
 
 img{
-    grid-column: 2/3;
-    grid-row: 1/3;
-    
-    border: solid 16px #aad;
-    margin: 16px;
+    filter: contrast(0.5) brightness(1.5) saturate(0.9);
+}
+.image{
+    z-index: 3;
+    mix-blend-mode: hard-light;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; text-align: center;
+    color: hsl(0, 0%, 100%); 
+}
 .attribution a { color: hsl(228, 45%, 44%); }
