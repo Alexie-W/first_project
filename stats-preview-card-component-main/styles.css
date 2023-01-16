@@ -36,15 +36,6 @@ body{
     text-align: center;
 }
 
-.infoMini {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-}
-
 .info h1{
     display: inline-block;
     color: hsl(0, 0%, 100%);
@@ -64,11 +55,17 @@ body{
     font-weight: bold;
     color: hsl(277, 64%, 61%);
 }
-.container .about{
+.about{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;  
+}
+.itemContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
 }
 
 .items{
